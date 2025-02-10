@@ -1,4 +1,4 @@
-For this project, we shall use Ansible to deploy Nexus to Ubuntu server similar to the following commands, if it was deployed manually.
+For this project, we shall use Ansible to deploy Nexus to Ubuntu server, similar to the following commands, if it was deployed manually.
 
 Manual way:
 
