@@ -38,6 +38,6 @@ Instructions:
 Note:
 
 - Do not amend anything in YAML file. Everything should run as intended.
-- Ansible config has been set to not perform host key checking and default to 'hosts' file.
+- Ansible config has been set to skip host key checking and default to 'hosts' file.
 
 ---
