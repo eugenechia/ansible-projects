@@ -1,3 +1,9 @@
+This is a collection of Ansible projects. Please run through the description of each project.
+
+---
+
+//Deploy-Nexus project
+
 For this project, we shall use Ansible to deploy Nexus to Ubuntu server, similar to the following commands, if it was deployed manually.
 
 Manual way:
@@ -23,14 +29,15 @@ su - nexus
 ps aux | grep nexus #check if nexus is running
 netstat -lnpt #outputs result of checking
 
----
-
 Instructions:
 
 1. Deploy Ubuntu server (from any cloud provider with public access)
-2. Amend the 'hosts' file with the public IP of the deployed server and location of your private key.
+2. Amend the 'hosts' file with the public IP of the deployed server and location of your private key in [nexus_server] section.
 3. In command line, run 'ansible-playbook deploy-nexus.yaml'
 
 Note:
 
 - Do not amend anything in YAML file. Everything should run as intended.
+- Ansible config has been set to not perform host key checking and default to 'hosts' file.
+
+---
