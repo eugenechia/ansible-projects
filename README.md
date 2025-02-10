@@ -1,5 +1,7 @@
 For this project, we shall use Ansible to deploy Nexus to Ubuntu server similar to the following commands, if it was deployed manually.
 
+Manual way:
+
 apt-get update
 apt install openjdk-8-jre-headless
 apt install net-tools
@@ -18,8 +20,8 @@ run_as_user="nexus"
 su - nexus
 /opt/nexus-3.65.0-02/bin/nexus start
 
-ps aux | grep nexus
-netstat -lnpt
+ps aux | grep nexus #check if nexus is running
+netstat -lnpt #outputs result of checking
 
 ---
 
